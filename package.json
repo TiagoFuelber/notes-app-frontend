@@ -1,0 +1,39 @@
+{
+  "name": "notes-app-frontend",
+  "version": "1.0.0",
+  "description": "Frontend aplication to interact with a study C# API for keeping notes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack-dev-server --mode development --open --hot",
+    "build": "node_modules/.bin/webpack --config webpack.prod.js --mode production",
+    "serve": "node_modules/.bin/http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiagoFuelber/notes-app-frontend.git"
+  },
+  "author": "TiagoFuelber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiagoFuelber/notes-app-frontend/issues"
+  },
+  "homepage": "https://github.com/TiagoFuelber/notes-app-frontend#readme",
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
